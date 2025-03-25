@@ -1,0 +1,247 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: aliceblue;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(16, 16, 17);
+    color: rgb(21, 29, 29);
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+.logo{
+    margin-left: 13px;
+    font-size: 19px;
+    color: rgb(236, 234, 234);
+}
+nav ul{
+
+    display: flex;
+    align-items: center;
+    margin-right: 13px;
+}
+nav li{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(246, 235, 235);
+}
+nav li a{
+    text-decoration: none;
+    margin-inline: 20px;
+    font-size: 20px;
+    color: rgb(247, 244, 244);
+}
+ul li a:hover, ul li a.active{
+    color: aqua;
+    font-weight: 600;
+}
+
+@media only screen and (max-width:600px){
+    nav ul{
+        display: none;
+    }
+    .icon{
+        display: flex;
+    }
+}
+.icon{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    margin-right: 12px;
+    color: aliceblue;
+    cursor: pointer;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+}
+.mainText h1{
+    font-size: 55px;
+    color: aqua;
+}
+.mainText button{
+    width: 120px;
+    height: 34px;
+    background-color: aqua;
+    color: azure;
+    font-size: 18px;
+}
+.mainText button:hover{
+    border: 2px solid aqua;
+    background-color: transparent;
+    color: rgb(24, 26, 26);
+    cursor: pointer;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.cards .crd{
+    margin-inline: 22px;
+    text-align: center;
+}
+.crd img{
+    width: 300px;
+    height: 340px;
+}
+.head{
+    padding: 55px;
+    text-align: center;
+}
+.head span{
+    color: orangered;
+}
+.reviews{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.reviews .rcard{
+    width: 240px;
+    height: 260px;
+    background-color: blanchedalmond;
+    text-align: center;
+    padding: 13px;
+    margin-inline: 20px;
+}
+.rcard img{
+    width: 42%;
+    border-radius: 50%;
+}
+.rcard button{
+    width: 90px;
+    height: 30px;
+    border: none;
+    color: #f6f0f0;
+    background-color: aqua;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.rcard:hover{
+    transition: 1s ease;
+    background-color: gray;
+    cursor: pointer;
+}
+.crd i{
+    color: blueviolet;
+    position: relative;
+    top: -11px;
+}
+.crd h3{
+    margin-top: 3px;
+}
+.blog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.blog .blogcard{
+    width: 300px;
+    height: 340px;
+    text-align: center;
+    background-color: aliceblue;
+    margin-inline: 22px;
+    padding: 11px;
+    margin-inline: 29px;
+    border-radius: 5px;
+}
+.blogcard img{
+    width: 100%;
+    border-radius: 5px;
+}
+.blogcard a{
+    padding: 4px 20px;
+    background-color: aqua;
+    color: antiquewhite;
+    font-size: 18px;
+    text-decoration: none;
+}
+.blogcard:hover{
+    transition: 1s ease;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.connect{
+    text-align: center;
+}
+.connect input{
+    width: 380px;
+    padding: 11px;
+    font-size: 18px;
+    background-color: aliceblue;
+    margin-top: 11px;
+    border: 2px solid black;
+}
+.connect button{
+    width: 130px;
+    height: 36px;
+    font-size: 20px;
+    border: none;
+    margin-top: 22px;
+    color: aliceblue;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 44px;
+    margin-top: 33px;
+    color: aliceblue;
+}
+.itemPage{
+    display: flex;
+    display: none;
+    margin-top: 33px;
+    margin-left: 25px;
+    margin-inline: 23px;
+}
+.itemPage img{
+    width: 400px;
+    margin-inline: 23px;
+}
+.itemPage .mainText{
+    margin-inline: 23px;
+}
+.itemText h2{
+    color: greenyellow;
+}
+.itemPage input{
+    width: 30px;
+    padding: 4px;
+    font-size: 20px;
+}
+.temText a{
+    color: antiquewhite;
+    background-color: orchid;
+    font-size: 18px;
+    padding: 4px 20px;
+    text-decoration: double;
+}
+.showData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    gap: 20px;
+    background-color: rgb(136, 155, 155);
+    color: black;
+    height: 240px;
+    top: 55px;
+    padding: 0%;
+    text-align: center;
+}
